@@ -1,0 +1,89 @@
+#######################################
+
+##### BASIC ##########
+# TAVALISELT kõik korraga
+# - kasutatakse         git add . ehk kõik
+# - kasutatakse         commit
+# - kasutatakse         git push  lihtsalt
+
+git add . 
+git commit -m 'lisan ISE_test'
+git push
+
+#######################################
+
+#### TEISED KÄSUD ###
+git add ISE_test.py 	# või add kindel fail
+
+git status		# palju muut on git commit?
+
+git pull		# tõmba repo seis
+
+git fetch		# ?
+
+
+#######################################
+#### ESIMENE kord kui alustan puhta repository-ga
+
+git clone git@github.com:siimnettan/grupp_1_AI-botanus.git
+
+####################################
+#### LOOGIKA
+# 00. genereeri git kood ning 
+	kopi see kausta asub .ssh all
+
+# 1. mine antud kausta v klooni kaust git ssh ja siis1
+
+# 2. touch .gitignore ja lisa sinna faili-nimi, mida
+	välistada
+	echo "index_2.html" >> .gitignore
+
+
+
+#######################################
+#### EI tea kasutusjuhtumit
+# - kasutatakse 	init
+# - kasutatakse 	git add ja konkreetne fail
+# - kasutatakse 	branch-i
+# - kasutatakse 	git remote add origin ...
+# - kasutatakse 	push -u kuhu
+
+echo "# 2025.10.16_TA-25_Siim_python" >> README.md
+
+git init
+
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:siimnettan/2025.10.16_TA-25_Siim_python.git
+git push -u origin main
+
+#######################################
+### git ESIMENE
+# NO - lokaalsest kohast ei saanud git-i teha kausta
+# YES- enne tee github-i repository ja siis clone
+
+
+ 
+######################################
+
+### MUUD KÄSUD
+
+rm -rf grupp_1_AI-botanus
+	- OHTLIK - SELGITUS:
+	rm — eemaldab (kustutab) faile ja kaustu;
+	-r (rekursiivne) — kustutab kausta koos 
+		kõigi alamkaustade ja failidega;
+	-f (force) — „jõuga” kustutab, 
+		ei küsi kinnitust ega 
+		näita vigu, kui mõnda faili pole.
+	grupp_1_AI-botanus — see on sihtkaust või 
+		fail, mida käsk kustutab.
+
+code .			# avab VS Code - EI TÖÖTA
+code index.html		# avab VS Code - EI TÖÖTA
+
+
+mkdir images
+
+
